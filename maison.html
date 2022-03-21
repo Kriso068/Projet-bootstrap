@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+
+
+    <link rel="stylesheet" href="CSS/style.css">
+    
+
+    <title>Annonces</title>
+</head>
+<body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">FakeBnb !</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link"  href="index.html">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="annonces.html">Annonces</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="proprietaires.html">Propriétaires</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Nous contacter</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link  text-black" href="mon-compte.html">Mon Compte</a>  
+                </li>
+            </ul>  
+          </div>
+        </div>
+      </nav>
+  </header>
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 my-5">
+          <div class="mx-auto m-5 bg-white rounded">
+            <h2 class="py-2 ms-2">Déscriptif</h2>
+            <div class="row p-2">
+              <div class="col-md-7">
+
+                <!-------------Google Map------------------------------------------------->
+
+                <div id="map-container-google-11" class="z-depth-1-half map-container-6" style="height: 400px">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5815.423694797033!2d2.0001443202594134!3d44.019364479902514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12adc6178e32635d%3A0xc2eec6fd884845f0!2sLatorre%20Louis!5e1!3m2!1sfr!2sfr!4v1646054539244!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+
+                <!-------------Déscriptif------------------------------------------------->
+
+                <div class=" p-2">
+                  <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet aliquid deleniti cumque reiciendis non impedit voluptatibus ipsam, cupiditate quasi eum obcaecati ullam dicta autem sunt officia. 
+                  </p>
+                  <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente maxime quae ea fugiat laborum veritatis ipsum, similique accusamus magnam repellendus, hic nisi vitae obcaecati repudiandae nihil, eligendi debitis deserunt quisquam.
+                  </p>
+                  <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus alias voluptatem unde vero nihil iure aut iste omnis amet necessitatibus!
+                  </p>
+                  <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero, odit?
+                  </p>
+                </div>
+
+                <!-------------Caroussel Image------------------------------------------------->
+
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="IMG/maison-sud.jpg" class="d-block w-100 carou" alt="maison">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/int2.jpg" class="d-block w-100 carou" alt="décoration interieur">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="IMG/int2.jpeg" class="d-block w-100 carou" alt="décoration interieur">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="card mb-5">
+                  <div class=" col-md-12 card-header "> 
+                    <div class=" col-md-12 text-decoration-underline d-flex flex-row ">
+                      <img src="IMG//tete.jpeg" class="img-thumbnail rounded-circle proprio" alt="homme">
+                      <div class="col-7 ps-2 text-center ">
+                          <h6 class="fs-6 pt-3">Nico Gutknecht</h6>
+                          <a href="profile.html" class="badge badge-primary">3 annonces</a>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="col-md-12">
+                        <div class="card-body text-center">
+                          <h5 class="card-title border-bottom pb-2">membre depuis Fevrier 2019</h5>
+                          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, delectus vitae earum corporis dignissimos amet illum voluptate facere commodi, consequuntur quisquam, aperiam reiciendis culpa. Reprehenderit, dolor. In minima repellendus fugiat, eius voluptate et facere quibusdam atque commodi nesciunt praesentium nulla explicabo. Ad atque voluptates sunt tempore exercitationem. Quia, laboriosam corrupti?</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                <!-------------Déscriptif Membres------------------------------------------------->
+                
+                <div class="card">
+                  <h2 class="card-header">Réservation</h2>
+                  <div class="container">
+                    <form class="row g-3 needs-validation p-2" novalidate>   
+                      <div id="date-picker-example" class="col-md-3-form md-outline input-with-post-icon datepicker ">
+                          <label for="validationCustom03">Date de début</label>
+                          <div class="col-12">
+                            <!-- Préférez un input type date  -->
+                              <div class="input-group date" id="datepicker1">
+                                  <input type="text" class="form-control" id="validationCustom03" placeholder="jj/mm/aaa" value="" required> 
+                                  <span class="input-group-append">
+                                      <span class="input-group-text bg-light d-block">
+                                          <i class="bi bi-calendar point"></i>
+                                      </span>
+                                  </span>
+                              </div>
+                          </div>
+                      </div>
+                      <div id="date-picker-example" class="col-md-3-form md-outline input-with-post-icon datepicker ">
+                        <label for="validationCustom04">Date de fin</label>
+                        <div class="col-12">
+                          <div class="input-group date" id="datepicker2">
+                            <input type="text" class="form-control" id="validationCustom04" placeholder="jj/mm/aaa" value="" required> 
+                            <span class="input-group-append">
+                              <span class="input-group-text bg-light d-block">
+                                <i class="bi bi-calendar point"></i>
+                              </span>
+                            </span>
+                          </div>
+                        </div>
+                      </div>     
+                      <div class="col-12 my-4">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                          <label class="form-check-label" for="invalidCheck">
+                            J'accepter les <a href="#" class="text-decoration-none">conditions générales</a> 
+                          </label>
+                          <div class="invalid-feedback">
+                            Vous devez accepter les conditons géenérales
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <button class="btn btn-primary" type="submit">Réserver !</button>
+                      </div>                          
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="sticky-bottom"> 
+    <small>
+        <p class="bg-white m-0 text-center">
+            &copy; made by me
+        </p>
+    </small>     
+  </footer>
+  <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
+    <script type="text/javascript">
+      $(function() {
+          $('#datepicker1').datepicker();
+          $('#datepicker2').datepicker();
+      });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

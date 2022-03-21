@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <title>FakeBnB</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">FakeBnb !</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Accueil</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="annonces.html">Annonces</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="proprietaires.html">Propriétaires</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Nous contacter</a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-black" aria-current="page" href="mon-compte.html">Mon Compte</a>  
+                    </li>
+                </ul>  
+              </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 my-5">
+                    <div class="mx-auto mt-5 bg-white rounded">
+                        <h2 class="py-2 ms-2">Mon compte</h2>
+
+                        <!-------------Accordéon------------------------------------------------->
+                       
+                        <div class="accordion" id="accordionPanelsStayOpenExample">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                              <button class="accordion-button bg-danger text-white" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                Information Personnelles
+                              </button>
+                              </h2>
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                              <div class="accordion-body">
+                                <div class="col">
+                                  <div class="m-2">
+                                    <div class=" d-flex flex-rowalign-items-center">
+                                      <div class="col-md-4">
+                                        <img src="IMG//tete.jpeg" class="img-thumbnail img2" alt="homme">
+                                      </div>
+                                      <div class="col-md-5">
+                                        <div class="text-center ">
+                                          <h5 >Nico Gutknecht</h5>
+                                          <p>Date de naisance : 19.06.1984</p>
+                                          <p>10 Av de Bruxelle 68350 Didenheim</p>
+                                          <p>03 04 05 06 07</p>
+                                          <p class="text-center">
+                                            <button class="btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                              Modifier
+                                            </button>
+                                          </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                  <div class="row">
+                                    <div class="col-md-12">        
+                                      <div class="collapse col-12" id="collapseExample">
+                                        <div class="card card-body">
+
+                                          <!-------------Formulaire------------------------------------------------->
+
+                                          <form class="needs-validation m-2" novalidate>                           
+                                            <div class="row">         
+                                              <div class="col-md-5 mb-3">
+                                                <label for="validationCustom01">Nom</label>
+                                                <input type="text" class="form-control" id="validationCustom01" placeholder="Votre nom" value="" required>
+                                                <div class="valid-feedback">
+                                                  Looks good!
+                                                </div>
+                                              </div>
+                                              <div class="col-md-4 mb-3">
+                                                <label for="validationCustom02">Prénom</label>
+                                                <input type="text" class="form-control" id="validationCustom02" placeholder="Votre prénom" value="" required>
+                                                <div class="valid-feedback">
+                                                  Looks good!
+                                                </div>
+                                              </div>
+                                              <div class="col-md-3 mb-3">
+                                                <div id="date-picker-example" class="col-md-3-form md-outline input-with-post-icon datepicker ">
+                                                  <label for="validationCustom03">Date de naissance</label>
+                                                  <div class="col-12">
+                                                      <div class="input-group date" id="datepicker">
+                                                          <input type="text" class="form-control" id="validationCustom03" placeholder="jj/mm/aaa" value="" required> 
+                                                          <span class="input-group-append">
+                                                              <span class="input-group-text bg-light d-block">
+                                                                  <i class="bi bi-calendar point"></i>
+                                                              </span>
+                                                          </span>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                            </div>
+                                            </div>
+                                            <div class="row">
+                                              <div class="col-md-12 mb-3">
+                                                <label for="validationCustom04">Adresse</label>
+                                                <input type="email" class="form-control" id="validationCustom04" placeholder="Adresse" value="" required>
+                                                <div class="invalid-feedback">
+                                                  Veuillez saisir une adresse valide.
+                                                </div>
+                                              </div>
+                                            </div> 
+                                            <div class="row">                         
+                                              <div class="col-md-2 mb-3">
+                                                <label for="validationCustom05">Code postal</label>
+                                                <input type="text" class="form-control" id="validationCustom05" placeholder="Votre nom" value="" required>  
+                                              </div>
+                                              <div class="col-md-5 mb-3">
+                                                <label for="validationCustom06">Ville</label>
+                                                <input type="text" class="form-control" id="validationCustom06" placeholder="Votre prénom" value="" required> 
+                                              </div>
+                                              <div class="col-md-5 mb-3">
+                                                <label for="validationCustom07">Numéro de téléphone</label>
+                                                <input type="text" class="form-control" id="validationCustom07" placeholder="Numéro de téléphone" value="" required>
+                                              </div>
+                                            </div>
+                                            <div class="row border-2 border-bottom pb-2">
+                                              <div class="col-md-12 d-flex justify-content-center">
+                                                  <button class="btn btn-danger mb-1 " type="submit">Enregistrer</button>
+                                              </div>
+                                              <a href="#" class="text-decoration-none text-center text-danger"> Supprimer mon Compte</a>
+                                            </diV>   
+                                          </form>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>   
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                <button class="accordion-button collapsed bg-danger text-white" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                  Adresse E-mail
+                                </button>
+                              </h2>
+                              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                                <div class="accordion-body">
+
+                                  <!-------------Formulaire------------------------------------------------->
+
+                                  <form class="needs-validation" novalidate>
+                                    <strong>info@exemple.com.</strong>
+                                    <div class="mb-3">
+                                      <label for="exampleInputEmail1" class="form-label"></label>
+                                      <input type="email" class="form-control" id="validationCustom11" aria-describedby="emailHelp" placeholder="Nouvelle adresse E-mail" value="" required>
+                                    </div>
+                                    <div class="row text-center">
+                                        <div class="col-12">
+                                          <button class="btn btn-danger" type="submit">Modifier </button>
+                                        </div>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                <button class="accordion-button collapsed bg-danger text-white" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                  Modifier mon Mot de Passe
+                                </button>
+                              </h2>
+                              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                                <div class="accordion-body">
+
+                                  <!-------------Formulaire------------------------------------------------->
+
+                                  <form class="needs-validation" novalidate>
+                                    <div class="form-row">
+                                      <div class="col-md-12 mb-3">
+                                        <!--<label for="validationCustom08">Mot de passe Actuel</label>-->
+                                        <input type="text" class="form-control" id="validationCustom08" placeholder="Mot de passe Actuel" value="" required>
+                                      </div>
+                                      <div class="col-md-12 mb-3">
+                                        <!--<label for="validationCustom09">Nouveau mot de Passe</label>-->
+                                        <input type="text" class="form-control" id="validationCustom09" placeholder="Nouveau mot de Passe" value="" required>
+                                      </div>
+                                    </div>
+                                    <div class="form-row">
+                                      <div class="col-md-12 mb-3">
+                                        <!--<label for="validationCustom10">Confirmer le Nouveau mot de Passe</label>-->
+                                        <input type="text" class="form-control" id="validationCustom10" placeholder="Confirmer le Nouveau mot de Passe" required>
+                                      </div>
+                                      <div class="text-center ">
+                                        <button class="btn btn-danger" type="submit">Modifier </button>
+                                      </div>
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="sticky-bottom"> 
+      <small>
+          <p class="bg-white m-0 text-center">
+              &copy; made by me
+          </p>
+      </small>     
+    </footer>
+    
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
+    <script type="text/javascript">
+      $(function() {
+          $('#datepicker').datepicker();
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
