@@ -1,0 +1,14 @@
+# Set default index file
+DirectoryIndex index.html
+
+
+# Rewrite URLs for clean URLs
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  
+
+  # Rewrite rule to serve requests for non-existing files or directories to index.html
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.*)$ index.html [L]
+</IfModule>
